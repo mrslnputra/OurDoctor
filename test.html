@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <img src="./assets/logo.svg" class="img-circle" alt="">
+        <h1 class="display-4">Our Doctor!</h1>
+        <p class="lead">List of Doctor in Imno International Hostipal</p>
+        <hr class="my-4">
+    </div>
+    <h3 class="text-center">Input your doctor data here:</h3>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This
+                            field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Specialist</label>
+                        <select id="specialist">
+                            <option value="Sp.A">Sp.A</option>
+                            <option value="Sp.And">Sp.And</option>
+                            <option value="Sp.An">Sp.An</option>
+                            <option value="Sp.Ak">Sp.Ak</option>
+                            <option value="Sp.B">Sp.B</option>
+                            <option value="Sp.BA">Sp.BA</option>
+                            <option value="Sp.BP-RE">Sp.BP-RE</option>
+                            <option value="Sp.BS">Sp.BS</option>
+                            <option value="Sp.BTKV">Sp.BTKV</option>
+                            <option value="Sp.DV">Sp.DV</option>
+                            <option value="Sp.MK">Sp.MK</option>
+                            <option value="non-specialist">Non Specialist</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>University</label>
+                        <input type="text" name="university" id="university">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Specialist</th>
+                            <th>Salary</th>
+                            <th>University</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+ 
+    <script src="script.js"></script>
+</body>
+    <div class = "footer-container">
+        <img src="./assets/wave1.svg" alt="" >
+        <div class="centered-footer-text">
+            <div class="lead">PARIS FOX </div>
+            <div class="lead">G R O U P 7 </div>
+
+        </div>
+    </div>
+</html>
+
+
+
+
+
+
+
+<!-- <select id="specialist">
+    <option value="Sp.A">Sp.A</option>
+    <option value="Sp.And">Sp.And</option>
+    <option value="Sp.An">Sp.An</option>
+    <option value="Sp.Ak">Sp.Ak</option>
+    <option value="Sp.B">Sp.B</option>
+    <option value="Sp.BA">Sp.BA</option>
+    <option value="Sp.BP-RE">Sp.BP-RE</option>
+    <option value="Sp.BS">Sp.BS</option>
+    <option value="Sp.BTKV">Sp.BTKV</option>
+    <option value="Sp.DV">Sp.DV</option>
+    <option value="Sp.MK">Sp.MK</option>
+    <option value="non-specialist">Non Specialist</option>
+</select> -->

@@ -1,0 +1,12 @@
+.jumbotron {
+background-color: #4B6587;
+color: #F0E5CF;
+}
+
+.jumbotron img{
+  width: 200px;
+  margin: auto;
+}
+h3 .text-center{
+  font-size: 20px;
+}
